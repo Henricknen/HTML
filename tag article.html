@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova semântica</title>
+    <style>
+        article {
+            padding: 15px;
+            border: 1px solid #000;
+            border-radius: 10px;
+            background-color: #eee;
+            margin-bottom: 15px;
+        }
+
+        .article {
+            padding: 15px;
+            border: 1px solid #000;
+            border-radius: 10px;
+            background-color: #eee;
+            margin-bottom: 15px;
+        }
+
+        article h1 {
+            text-align: center;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    
+    <article>       <!-- 'article' da nova semantica -->
+        <h1>Formação</h1>
+    </article>      <!-- representa uma seção independente no documento, tem diplay block -->
+
+    <article>       <!-- 'article' da nova semantica -->
+        <h2>Superior:</h2>
+        <p>Análise e desenvolvimento de sistemas</p>
+    </article>
+
+    <article>       <!-- 'article' da nova semantica -->
+        <h2>Técnico:</h2>
+        <p>Técnico em Informática para internet</p>
+        <p>Técnico de Eletroeletrônica</p>
+    </article>
+
+    <div class="article">       <!-- maneira classica de se ultilizar 'article' -->
+        <h2>Cursos:</h2>
+        <p>Front end</p>
+        <p>Lógica de programação</p>
+    </div>
+
+</body>
+</html>

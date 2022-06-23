@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quebra de linha</title>
+    <style>
+        p {
+            line-height: 1;     
+        }
+
+        .esp1 {
+            line-height: 4;         /* espacamento da linha, antes e depois */
+        }
+
+        .esp_b_2 {
+            padding-bottom: 50px;
+        }
+    </style>
+</head>
+<p>
+
+    <p>     <!-- forma incorreta -->
+        <a href="https://github.com/Henricknen/HTML">Repositorio de HTML</a><br>    <!-- o elemento 'br' deve somente ser usado para quebras de linhas --> 
+    
+        <a href="https://github.com/Henricknen/Laravel">Repositorio de LARAVEL</a><br>      <!-- nao deve ser usado para separacao de grupos temaaticos dentro de paragrafo --> 
+
+       <a href="https://github.com/Henricknen/C-Sharp">Repositorio de C#</a><br> 
+    </p>
+
+            <!-- forma correta -->
+    <p class="esp1"><a href="https://github.com/Henricknen/FULLSTACK_SENAI">Repositorio FULLSTACK_SENAI</a></p>
+
+    <p class="esp_b_2"><a href="https://github.com/Henricknen/Site_HTML">Repositorio de SITE_HTML</a></p>       <!-- ultlizando CSS 'line-height' é uma melhor forma de adicionar um espaço entre as linhas do que adicionar 'br' de forma abusiva -->
+
+    <p class="esp_b_2"><a href="https://github.com/Henricknen/PHP">Repositorio de PHP</a></p>
+
+
+
+</body>
+</html>

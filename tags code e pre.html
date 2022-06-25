@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            pre {
+                border: 1px solid black;
+                padding: 10px;
+                border-radius: 10px;
+                display: inline-block;
+            }
+        </style>
+    </head>
+    <body>
+
+        <p>O codigo a seguir representa o corpo basico de um programa em C.</p>
+
+        <pre>
+        <code>      <!-- marcando que este conteudo é um codigo -->
+#include &lsaquo;studio.h&rsaquo;
+#include &lsaquo;stdlib.h&rsaquo;       <!-- '&lsaquo;' é codigo de caracte do sinal '<' e '&rsaquo;' é o codigo de caracter do sinal '>' -->
+#include &lsaquo;locale.h&rsaquo;
+
+int main() {
+
+    setlocale(LC_ALL,"Portuguese");
+    printf("Codigo basico em C");
+    system("pause");
+
+    return 0;
+}
+        </code>
+        </pre>
+
+        <p>Os cabeçalhos ultilizados podem variar de acordo com os 
+            recursos que deseja ultilizar no programa, então, stdlib e
+             locale podem ser omitidos como parte do codigo basico, assim 
+             como a função setlocale.</p>
+    
+</body>
+</html>

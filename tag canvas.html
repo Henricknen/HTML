@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renderização</title>
+    <style>
+        canvas {
+            border: 1px black solid;
+        }
+    </style>
+    <script>        /* trabalhando com elementos nesse 'canvas' */
+        function desenho() {
+            var canvas = document.getElementById('telaDesenho');
+            var ctx = canvas.getContext('2d');
+            ctx.fillRect(25, 25, 100, 100);     /* desenha um retangulo preenchido nesse 'canvas', de x = 25, y = 25, largura = 100 e altura =100  */
+        }
+    </script>
+</head>
+<body>
+
+    <canvas id="telaDesenho" width="500px" height="500px">     <!-- criação do 'canvas' -->
+        Seu browser não tem suporte ao elemento canvas!     <!-- se o 'canvas' não for processado pelo browser ira apresentar esta menssagem -->
+    </canvas>
+    <script>desenho();</script>     <!-- chamando a função 'desenho()' -->
+    
+</body>
+</html>

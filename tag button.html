@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão clikavel</title>
+    <style>
+        .btn1 {     /* aplicando formatação ao botão de classe 'btn1' */
+            background-color: black;
+            color: white;
+            width: 150px;
+            height: 40px;
+            border: 3px orange solid;
+            border-radius: 15px;
+        }
+
+        .btn1:hover {     /* aplicando formatação ao botão quando o mause estiver em cima dele com 'hover' */
+            background-color: white;
+            color: black;
+            width: 150px;
+            height: 40px;
+            border: 3px black solid;
+            border-radius: 15px;
+            cursor: pointer;       /* o cursor será uma mão */
+        }
+    </style>
+</head>
+<body>
+<!-- tipos possiveis de 'button' 
+        submit - este tem a ação pré-determinada de submeter, de fazer o envio de dados
+        reset - este tem a ação pré-determinada para limpar os dados
+        button - não tem ação pré-determinanada, o desenvolvedor que determina a sua ação do botão ultilizando javascript
+ -->
+    <button class="btn1" type="button" form="f_cadastro" onclick="alert('Desenvolvedor FULLSTACK');">        <!-- este 'button' faz parte do formulario 'f_cadastro', 'onclick' esta chamando uma função de javascript -->
+        Click
+    </button>
+    
+</body>
+</html>

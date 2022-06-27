@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caixa de dialogo</title>
+    <script>
+        function abrirDialog() {            /* funcão que controla o atributo 'open', abre a caixa de dialog  */
+            document.getElementById("d1").setAttribute("open", "")       /* apontando para o elemento 'd1', setando o atributo, passando o atributo e o valor do atributo que quero abrir */
+        } 
+
+        function fecharDialog() {            /* funcão que controla o atributo 'open', fecha a caixa de dialog  */
+            document.getElementById("d1").removeAttribute("open")       
+        }            
+    </script>
+</head>
+<body>
+
+    <button onclick="abrirDialog()">Abrir</button>       <!-- botões para controlar a abertura e fechamento de 'dialog' -->
+    <button onclick="fecharDialog()">Fechar</button>          <!-- 'onclick' chama uma função do javascript -->
+    <dialog id="d1" open>       <!-- cria uma caixa de dialogo -->    
+        <p><dfn title="linguagem de marcação para web">HTML</dfn> Hypertext Markup Language é uma linguagem de marcação       <!-- este conteudo está dentro de uma caixa de "dialogo" -->
+            utilizada na construção de páginas web</p>
+    
+        <p><dfn><abbr title="Formatação para páginas web">CSS</abbr></dfn> Cascading Style Sheets recurso para adicionar estilos/      <!-- 'abbr' é uma abreviação -->
+            formatações a um documento web</p>
+        </dialog>
+    
+</body>
+</html>

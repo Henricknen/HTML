@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>details e summary</title>
+    <style>
+        summary::-webkit-details-marker {       /* indicando que a formatação sera no marcador 'seta' */
+            color: red;
+        }
+
+        details[open] summary::-webkit-details-marker {       /* indicando que a formatação sera no marcador quando estiver aberto'seta' */
+            color: blue;
+        }
+
+        details article {       /* somente os 'article' dentro do 'details' recebera estas formatações */
+            background-color: #ddd;
+            border: 1px solid #000;
+            border-radius: 15px;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <details>     
+        <summary>Repositorios deste GITHUB</summary>        <!-- é o titulo do 'details' -->
+        <article>
+            <p>HTML</p>     <!-- estes elementos podem ser organizados com 'article' ou 'section'-->
+            <p>.NET</p>
+            <p>Laravel</p>
+            <p>SQL</p>
+            <p>FULLSTACK_SENAI</p>
+            <p>Java</p>
+            <p>Javascript</p>
+            <p>Outros...</p>
+        </article>
+        <article>
+            <p>projeto_integrador_vidracaria</p>     
+            <p>Sistema-de-login</p>
+            <p>Estrutura-de-dados</p>
+            <p>C-Sharp</p>
+        </article>
+    </details>
+
+        <article>
+            <p>HTML</p>     
+            <p>.NET</p>
+            <p>Laravel</p>
+            <p>SQL</p>
+            <p>FULLSTACK_SENAI</p>
+            <p>Java</p>
+            <p>Javascript</p>
+            <p>Outros...</p>
+        </article>
+    
+</body>
+</html>

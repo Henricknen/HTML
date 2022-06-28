@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caixa de dialogo parte 2</title>
+    <style>
+        dialog {
+            padding: 0;
+            border: 0;
+            border-radius: 7px;
+            box-shadow: 0 0 10px black;
+            flex-direction: column;
+        }
+
+        dialog::backdrop {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .dialog-titulo {
+            background-color: #eee;
+            border-top-left-radius: inherit;
+            border-top-right-radius: inherit;
+            padding: 7px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #aaa;
+            height: 40px;
+        }
+
+        .dialog-corpo {
+            background-color: #fff;
+            padding: 7px;
+
+        }
+
+        .dialog-rodape {
+            background-color: #fff;
+            border-bottom-left-radius: inherit;
+            border-bottom-right-radius: inherit;
+            padding: 7px;
+            border-top: 1px solid #aaa;
+        }
+
+        #btn-fechar {
+            border: none;
+            border-radius: 7px;
+            padding: 7px;
+            cursor:pointer;
+            outline: none;
+        }
+
+        #btn-fechar:hover {
+            background-color: #eee;
+        }
+    </style> 
+    <script>
+        function fecharDialog() {
+            document.getElementById("btn_dialog").innerHTML="Abrir";        /* muda o texto do botão para 'Abrir' */
+            document.getElementById("d1").removeAttribute("open");              /* remove o atributo 'open' e fecha a janela */
+        }
+
+        function abrirDialog() {
+            document.getElementById("btn_dialog").innerHTML="Fechar";       /* muda o texto do botão para 'Fechar' */
+            document.getElementById("d1").setAttribute("open", "");          /* seta 'set' o atributo 'open' no elemento 'd1' */
+        }
+
+        function controlaDialog(titulo,msg) {                  /* esta função verifica o estado do 'dialog' e chama as duas anterior o que permite abrir ou fechar o 'dialog' pelo mesmo botão */
+            if(document.getElementById("d1").open) {
+                fecharDialog();
+            } else {
+                abrirDialog();
+                document.getElementById("titulo").innerHTML = titulo;
+                document.getElementById("msg1").innerHTML = msg;
+            }
+        }
+
+    </script>
+</head>
+<body>
+
+    <button onclick="controlaDialog('Tecnologias', 'HTML, CSS, JAVASCRIPT, SQL,GIT HUB')" id="btn_dialog">Abrir</button>
+
+    <button onclick="controlaDialog('Frameworks',  'LARAVEVEL, ANGULAR')" id="btn_dialog">Abrir 2</button>
+
+    <dialog id="d1">
+        <div class="dialog-titulo">                 <!-- divisão de titulo -->
+            <h3 id="titulo">Caixa de Dialogo</h3>
+        </div>
+        <div class="dialog-corpo">                          <!-- divisão do corpo -->
+            <p id="msg2"></p>
+            <p id="msg1"></p>
+        </div>
+        <div class="dialog-rodape">                                 <!-- divisão do roda pé -->
+            <button id="btn-fechar" onclick="fecharDialog()">Fechar</button>
+        </div>
+    </dialog>
+    
+
+</body>
+</html>

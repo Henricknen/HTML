@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>representação de container</title>
+    <style>
+        .apresentacao {
+            text-align: center;
+        }
+
+        .formacao {
+            display: flex;
+        }
+
+        .graduacao {
+            border: 1px solid yellow;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: rgb(114, 114, 237);
+            margin: 5px;
+        }
+
+        .tecnicos {
+            border: 1px solid red;
+            padding: 5px;
+            border-radius: 5px;
+            background-color: rgb(41, 227, 50);
+            margin: 5px;
+        }
+
+        .cursos_preparatorios {
+            border: 1px solid blue;
+            padding: 5px;
+            border-radius: 5px;
+            background-color: rgb(230, 0, 255);
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <article>
+        <div class="apresentacao">               <!-- 'div' de apresentação pessoal -->
+            <h1>Quem sou:</h1>
+            <p>Me chamo Luis Henrique Silva Ferreira, nasci no dia de 08 do 05 de 1991, profissional de TI </p>
+            <h2>Formação</h2>
+        </div>
+                    <!-- ultilizando 'div' se obtem uma vantagem organizacional -->
+        <div class="formacao">
+            <div class="graduacao">         <!-- graduação -->
+                <h3>Análise e desenvolvimento de sistemas</h3>
+                <p>Cria, projeta, desenvolve e configura programas softwares e sistemas para inúmeras empresas. Faz auditoria de sistemas para avaliar possíveis erros e falhas.
+                    Além disso, o tecnólogo em Análise e Desenvolvimento de Sistemas está apto 
+                a prestar consultoria e desenvolver pesquisas.</p>
+                <a href="">Confira</a>
+            </div>
+
+            <div class="tecnicos">          <!-- 'div' de formação tecnica -->
+                <h3>Técnico de informatica para internet</h3>
+                <p>O Técnico em informática para a internet tem como objetivo desenvolver sistemas para internet, bem como, produzir interface web
+                    de acordo com metodologia e padrão de qualidade, usabilidade, ergonomia
+                    acessibilidade e segurança.</p>
+                    <a href="">Confira</a>
+
+                <h3>Técnico de Eletroeletrônica</h3>
+                <p>objetivo é desenvolver, instalar e manter sistemas eletroeletrônicos de acordo com procedimentos e normas técnicas,
+                ambientais, de qualidade, de saúde e segurança no trabalho.</p>
+                <a href="">Confira</a>
+            </div>
+
+            <div class="cursos_preparatorios">      <!-- 'div' de cursos preparatorios -->
+                <h3>Front-End</h3>
+                <p>Programador Front-End tem por objetivo desenvolvimento de competências que possibilita programar sistemas utilizandoAs principais tecnologias doFront-end</p>
+                <a href="">Confira</a>
+
+                <h3>Lógica de programação</h3>
+                <p>Princípios básicos da lógica de programação poder criar sites, desenvolver games e programar robôs.</p>
+                <a href="">Confira</a>
+            </div>
+        </div>
+    </article>
+    
+</body>
+</html>

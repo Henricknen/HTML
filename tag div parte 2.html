@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>posicionando divs</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        *{      /* todos os elementos */
+            box-sizing: border-box;
+            padding: 0px;
+        }
+
+        .main {
+            border: 1px dotted red;         /* é uma borda 'dotted' pontilhada */
+            margin: auto;       /* todos os elementos 'main' serão centralizados */
+            width: 960px;           /* todos os elementos 'main' serão centralizados */
+        }
+
+        #cabecalho, #corpo, #rodape {
+            border: 1px dotted #aaa;                /* é uma borda 'dotted' pontilhada */
+
+        }
+
+        #cabecalho {
+            position: absolute;
+            top: 0px;       /* 'top' configura o eixo Y, distançia da borda superior para o elemento */
+            left: 0px;          /* 'left' distancia a margem esquerda do elemento */
+            width: 100%;            /* largura 'width' é de 100% */
+            height: 100px;              /* a altura é de 100 pixels */
+        }
+
+        #corpo {
+            position: absolute;
+            top: 100px;     /* esta 'div' vai começar depois da outra 'div' */
+            left: 0px;
+            width: 100%;        /* 'width' de 100% ocuppa a tela inteira */
+            height: 570px;          /* altura */
+        }
+
+        #caixa1, #caixa2, #caixa3 {
+            width: 150px;
+            min-height: 70px;
+        }
+
+        #caixa1 {
+            position: absolute;     /* posiciona o elemento de acordo com a janela desde que o elemento pai seja o 'static' */
+            top: 0px;
+            left: 0px;
+            background-color: red;
+            color: white;
+            border: 1px solid black;
+        }
+
+        #caixa2 {
+            position: relative;     /* o 'relative' posiciona em relação ao elemento pai de 'caixa 2' que é o 'main' */
+            top: 0px;
+            left: 0px;
+            background-color: blue;
+            color: white;
+            border: 1px solid black;
+        }
+
+        #caixa3 {
+            position: fixed;                   /* o 'fixed' posiçiona em relação a janela e nunca sai do lugar onde esta posicionado */
+            bottom: 0px;        /* move o 'caixa 3' para parte de baixo */
+            left: 0px;
+            background-color: yellow;
+            color: black;
+            border: 1px solid black;
+            z-index: 100;           /* colocara o 'caixa 3' na frente de qualquer camada */
+        }
+
+        #rodape {
+            position: absolute;
+            top: 670px;
+            left: 0px;
+            width: 100%;
+            height: 90px;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="cabecalho">
+        <div class="main">
+            <h1>Informações</h1>
+        </div>
+    </div>
+
+    <div id="corpo">
+        <div class="main">
+            <div id="caixa1">
+                <h3>caixa 1</h3>
+            </div>
+            <div id="caixa2">
+                <h3>caixa 2</h3>
+            </div>
+            <div id="caixa3">
+                <h3>caixa 3</h3>
+            </div>
+            <p>manupulação de 'div', usando position, top, left, width, height</p>
+            <p>Analista LUIS HENRIQUE SILVA FERREIRA</p>
+            <p>este codigo esta no repositorio: https://github.com/Henricknen/HTML</p>
+        </div>
+    </div>
+
+    <div id="rodape">
+        <div class="main">
+            <p>LUIS HENRIQUE SILVA FERREIRA</p>
+            <P>2022</P>
+        </div>
+    </div>
+
+    
+    
+</body>
+</html>

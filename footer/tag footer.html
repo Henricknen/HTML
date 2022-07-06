@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tag de seção</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        
+        .rodape_final {
+            background-color: rgb(77, 67, 67);
+            color: white;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .art_rod {
+            border: 1px solid rgb(77, 67, 67);
+            width: 33.33%;
+            margin: 10px;
+        }
+
+        .img_rodape {
+            width: 80px;
+            height: 80px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Cabeçalho</h1>   <!-- cabecalho -->
+
+        <footer>
+        </footer>
+    </div>
+
+    <article>           <!-- cada uma dessas secoes podem ter o proprio 'footer' -->
+        <p>Corpo da página</p>         
+        <footer>
+            <a href="https://github.com/Henricknen/HTML">Repositorio de HTML 5</a>
+
+        </footer>
+    </article>
+
+    <footer class="rodape_final">        <!-- representa o rodape de uma secao -->
+        <article class="art_rod">
+            <img src="Luis henrique.jpg" alt="Eu" class="img_rodape">
+        </article>
+
+        <article class="art_rod">
+            <p>Codificação de todas tags validas do HTML 5</p>      <!-- rodape -->
+        </article>
+
+        <article class="art_rod">
+            <a href="https://github.com/Henricknen/HTML">Repositorio de HTML 5</a>
+        </article>
+    </footer>
+    
+</body>
+</html>

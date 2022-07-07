@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>botões</title>
+    <style>
+        input {
+            display: block;     /* joga o 'input' para baixo do 'label' */
+        }
+
+        form {
+            border: 1px solid black;        /* borda de espessura de 1px, em linha reta e de cor preta */
+            padding: 10px;                 /* ditanciamento dos elementos */
+            border-radius: 15px;        /* arredonadmento das pontas */
+            background-color: yellowgreen;  /* cor de fundo */
+        }
+
+        #dv-btns {
+            display: flex;      /* 'flex' faz com que os elementos fiquem um ao lado do outro */
+        }
+    </style>
+</head>
+<body>
+
+    <form name="f_cadastro" action="#" method="get">        <!-- method 'get'expliçito passa as informações pela URL, 'post' faz o mérodo de passagem pelo corpo da menssagem é um meétodo interno -->
+        <label>Nome:</label>
+        <input type="text" name="f_nome">
+        <div id="dv-btns">                                                                              
+            <input type="submit" name="f_btn_enviar" value="Gravar">         <!-- 'submit' faz o envio dos dados para a página que estiver espeçificada no 'action' -->
+            <input type="reset" name="f_btn_limpar" value="Limpar">      <!-- 'reset' faz a limpeza dos campos do formulário -->
+            <input type="button" name="f_btn_nada" value="Nada"> <!-- 'button' não tem comportamento pré-definido --> <!-- 'value' renomeia do botão -->
+        </div>
+    </form>
+    
+</body>
+</html>

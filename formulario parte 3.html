@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password_checkbox_radio</title>
+    <style>
+        .quebra {
+            display: block;     /* joga os 'input's para baixo do 'label' */
+        }
+
+        .espaco {
+            margin-bottom: 15px;
+        }
+
+        .espaco_t {
+            margin-top: 15px;
+        }
+
+        form {
+            border: 1px solid black;        /* borda de espessura de 1px, em linha continua e de cor preta */
+            padding: 10px;                 /* ditanciamento dos elementos */
+            border-radius: 15px;        /* arredonadmento das pontas */
+            background-color: rgb(0, 255, 8);  /* cor de fundo */
+        }
+
+    </style>
+</head>
+<body>
+
+    <form name="f_cadastro" action="#" method="get">        <!-- method 'get'expliçito passa as informações pela URL, 'post' faz o mérodo de passagem pelo corpo da menssagem é um meétodo interno -->
+        <label>Nome:</label>
+        <input class="espaco quebra" type="text" name="f_nome" maxlength="20" size="25">        <!-- 'maxlenght' é o tamanho maximo de caracteres que o campo vai suporta -->
+        <label>Senha:</label>
+        <input class="espaco quebra" type="password" name="f_senha" maxlength="10" size="15">       <!-- input 'password' é uma senha, 'size' configura o tamanho do campo -->
+        <label class="quebra">Formação</label>
+        <input type="checkbox" name="f_gra" value="ADS">Análise e desenvolvimento de sistemas     <!-- caixa de seleção -->
+        <input type="checkbox" name="f_tec" value="front_end/back_end">Técnico de informática para internet
+        <input type="checkbox" name="f_tec" value="desevolvimento_de_sistemas_eletroeletrônicos">Técnico de Eletroeletrônica         <!-- 'checkbox' permite marca mais de uma opção -->
+        <input type="checkbox" name="f_cur" value="parte_frontal">Programador Front End
+        <input type="checkbox" name="f_cur" value="programação ">Lógica de programação      <!-- 'value' é o valor que será passado para processamento no banco de dados -->
+        <input class="espaco_t quebra" type="submit" name="f_btn_enviar" value="Entrar">
+        <label class="espaco_t quebra">Linkedin/ GitHub</label>
+        <input type="radio" name="f_link" value="s" checked>Sim     <!-- com o parametro 'checked' a opção ja aparece seleçionada -->
+        <input type="radio" name="f_link" value="n">Não         <!-- com 'radio' so é possivel marcar uma opção -->
+
+    </form>
+    
+</body>
+</html>

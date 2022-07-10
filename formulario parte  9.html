@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>select e option</title>
+    <style>
+        .quebra {
+            display: block;     /* joga os 'input's para baixo do 'label' */
+        }
+
+        .espaco {
+            margin-bottom: 15px;
+        }
+
+        .espaco_t {
+            margin-top: 15px;
+        }
+
+        form {
+            border: 1px solid black;        /* borda de espessura de 1px, em linha continua e de cor preta */
+            padding: 10px;                 /* ditanciamento dos elementos */
+            border-radius: 15px;        /* arredonadmento das pontas */
+            background-color: rgb(236, 243, 24);  /* cor de fundo */
+        }
+
+    </style>
+</head>
+<body>
+
+    <form name="f_cadastro" action="#" method="get">        <!-- method 'get'expliçito passa as informações pela URL, 'post' faz o método de passagem pelo corpo da menssagem é um meétodo interno -->
+
+        <select name="f_gen">        <!-- caixa de listagem 'select' -->
+            <option value="M">Masculino</option>     <!-- 'value' indica o que vai ser passado quando esta opção for selecionada -->
+            <option value="F">Feminino</option>
+        </select>
+
+        
+        <input class="espaco_t quebra" type="submit" name="f_enviar" value="Enviar">
+
+    </form>
+    
+</body>
+</html>

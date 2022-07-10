@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elementos</title>
+    <style>
+        .quebra {
+            display: block;     /* joga os 'input's para baixo do 'label' */
+        }
+
+        .espaco {
+            margin-bottom: 15px;
+        }
+
+        .espaco_t {
+            margin-top: 15px;
+        }
+
+        form {
+            border: 1px solid black;        /* borda de espessura de 1px, em linha continua e de cor preta */
+            padding: 10px;                 /* ditanciamento dos elementos */
+            border-radius: 15px;        /* arredonadmento das pontas */
+            background-color: rgb(115, 243, 24);  /* cor de fundo */
+        }
+
+    </style>
+</head>
+<body>
+
+    <form name="f_cadastro" action="#" method="get">        <!-- method 'get'expliçito passa as informações pela URL, 'post' faz o método de passagem pelo corpo da menssagem é um meétodo interno -->
+
+        <label class="quebra">Senha:</label>
+        <input type="passsword" name="f_senha" pattern="[a-zA-Z0-9]{5}" required>        <!-- elemento 'password' para inserção de senha, 'patter' espeçifica a senha sendo de 'a' a 'z' minuculas, de 'A' a 'Z' maiusculas e de '0' a '9' -->
+
+        <label class="quebra espaco_t">telefone:</label>
+        <input type="tel" name="f_tel" pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" placeholder="(xx)9xxxx-xxxx">     <!-- 'patter' indica o padrão, '\( - espeçifica o parenteses', '[0-9] - digitos de 0 a 9', '{2} - quantidade de digitos', '\) - fechamento do parenteses' -->
+        
+        <label class="quebra espaco_t">Escolha um numero:</label>
+        <input type="number" name="f_numero" step="2" min="0" max="10">     <!-- 'step' indica o passo ou quantidade que se quer implementar, 'min' e 'max' faz uma espeçificação de quantidade minima e maxima -->      
+
+        <label class="quebra espaco_t">Pesquisa:</label>
+        <input type="search" name="f_pesquisa">     <!-- 'search' é um campo de texto para pesquisa, que aparece um 'X' para poder limpar o campo -->
+
+
+        <input class="espaco_t quebra" type="submit" name="f_enviar" value="Enviar">
+
+    </form>
+    
+</body>
+</html>

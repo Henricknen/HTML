@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inputs file e url</title>
+    <style>
+        .quebra {
+            display: block;     /* joga os 'input's para baixo do 'label' */
+        }
+
+        .espaco {
+            margin-bottom: 15px;
+        }
+
+        .espaco_t {
+            margin-top: 15px;
+        }
+
+        form {
+            border: 1px solid black;        /* borda de espessura de 1px, em linha continua e de cor preta */
+            padding: 10px;                 /* ditanciamento dos elementos */
+            border-radius: 15px;        /* arredonadmento das pontas */
+            background-color: rgb(243, 24, 24);  /* cor de fundo */
+        }
+
+    </style>
+</head>
+<body>
+
+    <form name="f_cadastro" action="#" method="get" enctype="multipart/form-data">        <!-- 'enctype="multipart/form-data' informa que o formulario vai enviar arquivos além dos componentes de texto, seleções etc -->
+
+        <label class="quebra espaco_t">Selelione o arquivo:</label>
+        <input type="file" name="f_arquivo" accept=".jpg, .gif, .png" multiple>        <!-- parametro 'multiple' permite a seleção de mais de um arquivo, 'accept' so faz a seleção dos tipos '.jpg, .gif, .png' indicados -->
+
+        <label class="quebra espaco_t">Digite o URL:</label>
+        <input type="url" name="f_url">
+
+        
+        <input class="espaco_t quebra" type="submit" name="f_enviar" value="Enviar">
+
+    </form>
+    
+</body>
+</html>

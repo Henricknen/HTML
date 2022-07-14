@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fildset</title>
+    <style>
+        .quebra {
+            display: block;     /* joga os 'input's para baixo do 'label' */
+        }
+
+        .espaco {
+            margin-bottom: 15px;
+        }
+
+        .espaco_t {
+            margin-top: 15px;
+        }
+
+        form {
+            border: 1px solid black;        /* borda de espessura de 1px, em linha continua e de cor preta */
+            padding: 10px;                 /* ditanciamento dos elementos */
+            border-radius: 15px;        /* arredonadmento das pontas */
+            background-color: rgb(24, 243, 42);  /* cor de fundo */
+        }
+
+    </style>
+</head>
+<body>
+
+    <form name="f_cadastro" action="#" method="post">
+
+        <fieldset>      <!-- faz um agrupamento dos elementos para fazer parte deste grupo -->
+            <legend>Digite informações do usuario</legend>      <!-- 'legend' insere uma legenda neste 'fieldset' -->
+            <label for="f_nome">Nome:</label>
+            <input type="text" name="f_nome" id="f_nome" class="quebra">
+            <br>
+            <label for="f_telefone">Telefone:</label>
+            <input type="tel" name="f_telefone" id="f_telefone" class="quebra">
+            <br>
+        </fieldset>
+        <br>
+        <fieldset disabled>     <!-- 'disabled' disabilita todos elementos deste grupo -->
+            <legend>Digite o patrimonio</legend>
+            <label for="f_nome">Possui Carro?:</label><br>
+            <input type="radio" name="f_carro" id="f_carro" value="s" checked>Sim <br>
+            <input type="radio" name="f_carro" id="f_carro" value="n">Não
+            <br>
+            <label for="f_nome">Possui Casa?:</label><br>
+            <input type="radio" name="f_casa" id="f_casa" value="s" checked>Sim <br>
+            <input type="radio" name="f_casa" id="f_casa" value="n">Não
+            <br>            
+        </fieldset>
+
+        <input class="espaco_t quebra" type="submit" name="f_enviar" value="Enviar">
+        
+    </form>
+    
+</body>
+</html>

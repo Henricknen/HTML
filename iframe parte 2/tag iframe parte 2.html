@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navegação aninhada</title>
+    <style>
+        iframe {
+            width: 500px;
+            height: 320px;
+            border: none;
+        }
+
+        #banner {
+            width: 500px;
+            height: 100px;
+            border: none;
+        }
+    </style>
+    <script>
+        function  trocaBanner() {
+            var num = Math.floor(Math.random() * 4);            /* 'floor' arredonda o ponto flutuante para inteiro  */
+            var imgs = ['html.png', 'php.png', 'sql.png', 'python.jpg']
+            document.getElementById("banner").src = imgs[num];      /* apontando para o o id 'banner' */
+        }
+        function iniciar() {        /* função sera chamada quando a pagina for carregada */
+            trocaBanner();      /* chama a função 'trocaBanner()' */
+        }
+        windowaddEventListener("load", iniciar);
+    </script>
+</head>
+<body>
+
+    <iframe src="" name="banner" id="banner"></iframe>
+    <br>
+    <a href="formulario parte 3.html" target="main">formulario /</a>      <!-- este formulario vai dentro do 'iframe' -->
+    <a href="tag mark.html" target="main">texto em destaque /</a>      <!--  vai abrir dentro do 'iframe' -->
+    <a href="http://w3.org" target="main">w3 /</a>                <!-- vai abrir dentro do 'iframe' -->
+    <br>
+    <iframe src="" name="main"></iframe>       
+    
+</body>
+</html>

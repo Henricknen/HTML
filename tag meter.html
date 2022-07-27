@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meter</title>
+    <style>
+        meter {
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Formação:</h1>
+    <p>Análise e desenvolvimento de sistemas</p>
+    <p>Técnico de Informática para internet</p>
+    <p>Técnico de Eletroeletrônica</p>
+    <p>Programação Front End</p>
+    <p>Lógica de programação</p>        <!-- 'max' e 'min' indica a faixa de valor maximo e minimo 'high' e 'low' são atributos de alerta 'optimum' é o valor ideal -->
+    <meter id="m1" value="8" max="10" min="0" high="9" low="2" optimum="5"></meter>     
+    <script>        /* script que ira altera o valor do 'meter' */
+        document.getElementById("m1").value="10";       /* irar mostrar a barrinha em amarelo pois entrará na faixa de alerta 'max' */
+    </script>
+
+</body>
+</html>

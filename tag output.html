@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>saida</title>
+</head>
+<body>
+
+    <form oninput="res.value = parseInt(a.value) + parseInt(b.value)">      <!-- 'res.value' vai receber a soma de 'parseInt(a.value)' com parseInt(b.value) -->
+        0<input type="range" id="a" value="50">100      <!-- 'range' cria barra deslizante de 0 a 100 na metade -->
+        <p>+</p>
+        <input type="number" id="b" value="0">
+        <p>=</p>
+        <output name="res" for="a b"></output>
+    </form>
+    
+</body>
+</html>

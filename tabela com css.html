@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cabeçalho, corpo e roda pé</title>
+    <style>
+        thead {
+            color: green;
+            background-color: antiquewhite;     /* colocando 'antiquewhite' com cor de fundo em 'thead' */
+        }
+
+        tbody {
+            color: blue;        /* inserção de cor no conteúdo da célula */
+        }
+
+        tfoot {
+            color: red;
+        }
+
+        table, th, td {
+            border: 1px solid black;    /* aplicando borda na tabela toda */
+        }
+
+        table {
+            border-collapse: collapse;      /* tira o espaçamento da borda */
+        }
+
+        .class {
+            border: 3px solid red;
+        }
+    </style>
+</head>
+<body>
+
+    <table>     <!-- 'table' é o container principal da tabela -->
+        <thead>     <!-- 'thead' faz organização da área de cabeçalho  -->
+            <tr>
+                <th colspan="4">Luis Henrique Silva Ferreira</th>       <!-- 'colspan' é um parâmetro de mesclagem de colunas -->
+            </tr>
+        </thead>
+        
+        <tbody>     <!-- 'tbody' organiza área de corpo da página -->
+            <tr>                                <!-- 'tr' é as linhas -->
+                <th></th>
+                <th>Formado</th>        <!-- 'th' e a 'thead' é tag de células de cabeçalho -->   
+                <th>Em:</th>        <!-- o conteúdo da célula aparecerá no centro e em itálico -->
+                <th></th>
+            </tr>
+            <tr class="class">      <!-- conteúdo do 'th' formatado com classe -->
+                <td>Análise e desenvolvimento de sitemas</td>     
+                <td>Técnico de Informatica para internet</td>
+                <td>Técnico de Eletroeletrônica</td>            <!-- 'td' é a celulas da tabela -->
+                <td>Programação Front End</td>
+            </tr>
+        </tbody>
+
+        <tfoot>         <!-- 'tfoot' organiza como área de roda pé -->
+            <tr>
+                <td>Instituição: FATEC - PP</td>        
+                <td>Intituição: SENAI - PP</td>
+                <td>Intituição: SENAI - PP</td>
+                <td>Intituição: SENAI - PP</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>

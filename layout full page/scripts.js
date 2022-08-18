@@ -18,3 +18,22 @@ if(elementos.length) {      /* função verifica se array 'elementos' tem elemen
         animaScroll();
     })
 }
+
+function cliqueModal(img) {     // '(img)' é um parâmetro que é a imagem clicada
+    const janelaModal = document.getElementById('janelaModal');      /* para elementos que não serão alterados, não poderão ser alterados se ultiliza 'const' */
+    const imgModal = document.getElementById('imgModal');
+    const txtModal = document.getElementById('txtModal');
+    const fecharModal = document.getElementById('btnFechar');
+
+    janelaModal.classList.remove("escondeJanelaModal");     /* removendo a classe que escode o 'modal */
+    janelaModal.classList.add("mostraJanelaModal");     /* mostrando a clasee 'modal' */
+
+    imgModal.src = img.src;     
+    imgModal.alt = img.alt;     /* carregando a imagem e o texto 'alt' das imagens */
+    txtModal.innerHTML = img.alt;
+
+    btnFechar.onclick = function() {
+        janelaModal.classList.add("escondeJanelaModal");     
+        janelaModal.classList.removed("mostraJanelaModal");   
+    }
+}

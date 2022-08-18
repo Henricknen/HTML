@@ -36,19 +36,19 @@
 
     <section id="github" class="flexivel">
         <article class="borda0 containerCursos" data-anima="esquerda">
-            <img src="img/repositorio..png" class="mini" onclick="" alt="">
-            <img src="img/repositorio.png" class="mini" onclick="" alt="">
-            <img src="img/repositorio...png" class="mini" onclick="" alt="">
+            <img src="img/repositorio..png" class="mini" onclick="cliqueModal(this)" alt="repositorio.">
+            <img src="img/repositorio.png" class="mini" onclick="cliqueModal(this)" alt="repositorio..">
+            <img src="img/repositorio...png" class="mini" onclick="cliqueModal(this)" alt="repositorio...">
         </article>
         <article class="borda0 containerCursos" data-anima="centro">
-            <img src="img/php.png" class="mini" onclick="" alt="">
-            <img src="img/python.jfif" class="mini" onclick="" alt="">
-            <img src="img/sql.png" class="mini" onclick="" alt="">
+            <img src="img/php.png" class="mini" onclick="cliqueModal(this)" alt="php">
+            <img src="img/python.jfif" class="mini" onclick="cliqueModal(this)" alt="python">
+            <img src="img/sql.png" class="mini" onclick="cliqueModal(this)" alt="sql">
         </article>
         <article class="borda0 containerCursos" data-anima="direita">
-            <img src="img/angular.png" class="mini" onclick="" alt="">
-            <img src="img/laravel.png" class="mini" onclick="" alt="">
-            <img src="img/dotnet.png" class="mini" onclick="" alt="">
+            <img src="img/angular.png" class="mini" onclick="cliqueModal(this)" alt="angular">
+            <img src="img/laravel.png" class="mini" onclick="cliqueModal(this)" alt="laravel">
+            <img src="img/dotnet.png" class="mini" onclick="cliqueModal(this)" alt="dotnet">
 
         </article>
     </section>
@@ -87,8 +87,8 @@
 
     </footer>
 
-    <div id="janelaModal" class="janelaModal">
-        <span id="btnFechar" class="Fecharmodal">x</span>      <!-- botão de fechamento da 'janela modal' -->
+    <div id="janelaModal" class="janelaModal escondeJanelaModal">
+        <span id="btnFechar" class="fecharModal">x</span>      <!-- botão de fechamento da 'janela modal' -->
         <img id="imgModal" class="imgModal">
         <div id="txtModal" class="txtModal"></div>
     </div>

@@ -144,5 +144,42 @@ article {
     overflow: hidden;
     padding-top: 100px;
     z-index: 99999;
-    background-color: cadetblue;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.mostraJanelaModal {
+    display: block;
+}
+
+.escondeJanelaModal {
+    display: none;
+}
+
+.fecharModal {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: arial;
+    cursor: pointer;
+}
+
+.imgModal {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 800px;
+}
+
+.txtModal {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: azure;
+    position: 10px 0px;
+    height: 150px;
 }

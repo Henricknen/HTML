@@ -1,0 +1,22 @@
+.menu {
+    background-color: silver;
+    width: 100px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.menu a {
+    display: block;
+    text-align: center;
+    padding: 25px;
+    transition: all 0.5s ease;
+}
+
+.menu a:hover {
+    background-color: red;
+}
+
+.ativo {
+    background-color: rgb(200, 11, 11);
+}

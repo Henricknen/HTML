@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.tabs {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+
+}
+
+
+

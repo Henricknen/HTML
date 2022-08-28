@@ -1,13 +1,47 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-
+    font-family: Arial;
 }
 
 .tabs {
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
+}
 
+.tabs button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.4s;
+    font-size: 17px;
+}
+
+.tabs button:hover {
+    background-color: #ddd;
+}
+
+.tabs button:active {
+    background-color: #ccc;
+}
+
+.conteudoTab {
+   /* display: none; */
+    padding: 6px 12 px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.fechar {
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.fechar:hover {
+    color: red;
 }
 
 

@@ -10,25 +10,25 @@
 <body>
     
     <nav class="tabs">      <!-- area de navegação -->
-        <button id="">PHP</button>
-        <button id="">HTML</button>     <!-- guias -->
-        <button id="">SQL</button>
+        <button data-btnTabs onclick="abrirTab(event, 'php')" id="primeiro">PHP</button>
+        <button data-btnTabs onclick="abrirTab(event, 'html')">HTML</button>     <!-- guias -->
+        <button data-btnTabs onclick="abrirTab(event, 'sql')">SQL</button>
     </nav>
 
     <article id="sql" class="conteudoTab">
-        <span class="fechar">x</span>           <!-- botão -->
+        <span class="fechar" onclick="this.parentElement.style.display = 'none'">x</span>           <!-- botão -->
         <h3>SQL</h3>                        <!-- titulo -->
         <p>Repositorio de SQL</p>    <!-- paragrafo -->
     </article>
 
     <article id="php" class="conteudoTab">
-        <span class="fechar">x</span>      <!-- 'x' botão fechar -->
+        <span class="fechar" onclick="this.parentElement.style.display = 'none'">x</span>      <!-- 'x' botão fechar -->
         <h3>PHP</h3>
         <p>Repositorio de PHP</p>
     </article>
 
     <article id="html" class="conteudoTab">
-        <span class="fechar">x</span>
+        <span class="fechar" onclick="this.parentElement.style.display = 'none'">x</span>
         <h3>HTML</h3>
         <p>Repositorio de HTML</p>
     </article>

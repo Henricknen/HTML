@@ -23,7 +23,7 @@ body {
     background-color: #ddd;
 }
 
-.tabs button:active {
+.tabs button.ativo {
     background-color: #ccc;
 }
 
